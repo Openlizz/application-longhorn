@@ -1,3 +1,15 @@
 name: longhorn
 namespace: longhorn-system
 serviceAccountName: longhorn-serviceaccount
+values:
+  userValues:
+    - name: AWS_ACCESS_KEY_ID
+      required: true
+    - name: AWS_SECRET_ACCESS_KEY
+      required: true
+    - name: backupTarget
+      required: true
+encryption:
+  enabled: true
+  inputPaths:
+    - base/secret.yaml
