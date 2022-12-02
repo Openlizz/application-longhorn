@@ -19,7 +19,7 @@ spec:
       retries: 3
   test:
     enable: false
-  value:
+  values:
     defaultSettings:
       backupTarget: {{index . "backupTarget"}}
       backupTargetCredentialSecret: backup-secret
